@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+html {
+  // default font-size: 16px; I think it should be left blank so that browser can take care of it.
+}
+
+h1 {
+  //font-size: 3rem; // heading size will change to rem
+  color: maroon;
+ 
+}
+
+#rem1 {
+  font-size: 1rem; // 16px
+}
+
+#rem2 {
+  font-size: 2rem; // 32px
+}
+
+#remx {
+  font-size: 1.1rem; // 32px
+}
+
+body {
+  
+  background-color: linen;
+}
+
+
+
+p {
+  font-size: 20px;
+}
+
+</style>
+
+<title>font-size testing in rem</title>
+
+</head>
+
+<body>
+<h1>FONT-SIZE: REM</h1>
+
+<h1>This is a Heading: The quick brown fox jumps over a lazy dog</h1>
+
+<div id="rem2">This is a Heading: The quick brown fox jumps over a lazy dog, 2rem looks like 32px.</div>
+
+<p>The quick brown fox jumps over a lazy dog. 20px.</p> 
+
+<p>(if you change browser customize font setting, 20px will remain the same size. However, if you change zooming size, 20px will change accordingly.)</p>
+
+<div id="rem1">The quick brown fox jumps over a lazy dog. 1rem = 16px.</div>
+<div id="remx">The quick brown fox jumps over a lazy dog. 1.1rem = 17.6px.This is a Heading</div>
+<div id="rem2">The quick brown fox jumps over a lazy dog. 2rem = 32px.</div>
+<div id="rem2">This is a Heading</div>
+
+<hr/>
+<p>
+Rem values are relative to the root html element, not to the parent element. That is, If font-size of the root element is 16px then 1 rem = 16px for all elements. If font-size is not explicitly defined in root element then 1rem will be equal to the default font-size provided by the browser (usually 16px).
+</p>
+
+<p>https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97</p>
+
+<hr/>
+<p>Rem is a relative unit, like em, but it is always relative to the “root” element (i.e. :root {}) rather than using the cascade, like em does. This vastly simplifies working with relative units.
+
+<p>Notable browser support issues: doesn’t work in IE 8, Safari 4, or iOS 3.2.
+
+<p>https://css-tricks.com/the-lengths-of-css/
+</body>
+</html>
